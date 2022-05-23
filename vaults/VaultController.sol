@@ -19,8 +19,7 @@ import "../library/WhitelistUpgradeable.sol";
 abstract contract VaultController is IVaultController, PausableUpgradeable, WhitelistUpgradeable {
     using SafeBEP20 for IBEP20;
 
-    /* ========== CONSTANT VARIABLES ========== */
-    BEP20 private constant BUNNY = BEP20(0xC9849E6fdB743d08fAeE3E34dd2D1bc69EA11a51);
+
 
     /* ========== STATE VARIABLES ========== */
 
