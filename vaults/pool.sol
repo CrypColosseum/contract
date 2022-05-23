@@ -24,7 +24,7 @@ contract BunnyPool is IStrategyLegacy, RewardsDistributionRecipient, ReentrancyG
 
     /* ========== STATE VARIABLES ========== */
 
-    IBEP20 public rewardsToken; // bunny/bnb flip
+    IBEP20 public rewardsToken; 
     IBEP20 public constant stakingToken = IBEP20(0xC9849E6fdB743d08fAeE3E34dd2D1bc69EA11a51);   // bunny
     uint256 public periodFinish = 0;
     uint256 public rewardRate = 0;
@@ -47,7 +47,7 @@ contract BunnyPool is IStrategyLegacy, RewardsDistributionRecipient, ReentrancyG
     uint private constant timestamp2HoursAfterPresaleEnds = 1605585600 + (2 hours);
     uint private constant timestamp90DaysAfterPresaleEnds = 1605585600 + (90 days);
 
-    /* ========== BUNNY HELPER ========= */
+
 
     IStrategyHelper public helper = IStrategyHelper(0xA84c09C1a2cF4918CaEf625682B429398b97A1a0);
     IPancakeRouter02 private constant ROUTER_V1_DEPRECATED = IPancakeRouter02(0x05fF2B0DB69458A0750badebc4f9e13aDd608C7F);
