@@ -25,7 +25,7 @@ contract BunnyPool is IStrategyLegacy, RewardsDistributionRecipient, ReentrancyG
     /* ========== STATE VARIABLES ========== */
 
     IBEP20 public rewardsToken; 
-    IBEP20 public constant stakingToken = IBEP20(0xC9849E6fdB743d08fAeE3E34dd2D1bc69EA11a51);   // bunny
+    IBEP20 public constant stakingToken = IBEP20(0xC9849E6fdB743d08fAeE3E34dd2D1bc69EA11a51); 
     uint256 public periodFinish = 0;
     uint256 public rewardRate = 0;
     uint256 public rewardsDuration = 90 days;
@@ -203,13 +203,13 @@ contract BunnyPool is IStrategyLegacy, RewardsDistributionRecipient, ReentrancyG
 
     function _flipToWBNB(uint amount) private returns(uint reward) {
         address wbnb = ROUTER_V1_DEPRECATED.WETH();
-        (uint rewardBunny,) = ROUTER_V1_DEPRECATED.removeLiquidity(
+        (uint rewardFlex,) = ROUTER_V1_DEPRECATED.removeLiquidity(
             address(stakingToken), wbnb,
             amount, 0, 0, address(this), block.timestamp);
         address[] memory path = new address[](2);
         path[0] = address(stakingToken);
         path[1] = wbnb;
-        ROUTER_V1_DEPRECATED.swapExactTokensForTokens(rewardBunny, 0, path, address(this), block.timestamp);
+        ROUTER_V1_DEPRECATED.swapExactTokensForTokens(rewardFlex, 0, path, address(this), block.timestamp);
 
         reward = IBEP20(wbnb).balanceOf(address(this));
     }
