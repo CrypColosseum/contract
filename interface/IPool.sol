@@ -2,7 +2,7 @@
 pragma solidity ^0.6.12;
 pragma experimental ABIEncoderV2;
 
-interface IBunnyPool {
+interface IFlexPool {
 
     function balanceOf(address account) external view returns (uint);
     function earned(address account) external view returns (uint[] memory);
