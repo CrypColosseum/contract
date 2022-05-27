@@ -15,9 +15,9 @@ import "./calculator/PriceCalculatorETH.sol";
 contract DashboardETH is OwnableUpgradeable {
     using SafeMath for uint;
 
-    PriceCalculatorETH public constant priceCalculator = PriceCalculatorETH(0xB73106688fdfee99578731aDb18c9689462B415a);
+    PriceCalculatorETH public constant priceCalculator = PriceCalculatorETH();
 
-    address public constant WETH = 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2;
+    address public constant WETH = ;
 
     /* ========== INITIALIZER ========== */
 
