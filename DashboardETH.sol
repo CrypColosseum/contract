@@ -2,13 +2,10 @@
 pragma solidity ^0.6.12;
 pragma experimental ABIEncoderV2;
 
-
 import "@openzeppelin/contracts/math/SafeMath.sol";
 import "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol";
-
 import {PoolConstant} from "../library/PoolConstant.sol";
 import "../interfaces/IVaultCollateral.sol";
-
 import "./calculator/PriceCalculatorETH.sol";
 
 
