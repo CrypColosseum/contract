@@ -20,33 +20,33 @@ contract FlexFeeBox is WhitelistUpgradeable {
 
     /* ========== CONSTANT ========== */
 
-    ISafeSwapBNB public constant safeSwapBNB = ISafeSwapBNB(0x8D36CB4C0aEa63ca095d9E26aeFb360D279176B0);
-    IZap public constant zapBSC = IZap(0xdC2bBB0D33E0e7Dea9F5b98F46EDBaC823586a0C);
+    ISafeSwapBNB public constant safeSwapBNB = ISafeSwapBNB();
+    IZap public constant zapBSC = IZap();
 
-    address private constant WBNB = 0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c;
-    address private constant Flex = 0xC9849E6fdB743d08fAeE3E34dd2D1bc69EA11a51;
-    address private constant CAKE = 0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82;
-    address private constant USDT = 0x55d398326f99059fF775485246999027B3197955;
-    address private constant BUSD = 0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56;
-    address private constant VAI = 0x4BD17003473389A42DAF6a0a729f6Fdb328BbBd7;
-    address private constant ETH = 0x2170Ed0880ac9A755fd29B2688956BD959F933F8;
-    address private constant BTCB = 0x7130d2A12B9BCbFAe4f2634d864A1Ee1Ce3Ead9c;
-    address private constant DOT = 0x7083609fCE4d1d8Dc0C979AAb8c869Ea2C873402;
-    address private constant USDC = 0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d;
-    address private constant DAI = 0x1AF3F329e8BE154074D8769D1FFa4eE058B1DBc3;
+    address private constant WBNB = ;
+    address private constant Flex = ;
+    address private constant CAKE = ;
+    address private constant USDT = ;
+    address private constant BUSD = ;
+    address private constant VAI = ;
+    address private constant ETH = ;
+    address private constant BTCB = ;
+    address private constant DOT = ;
+    address private constant USDC = ;
+    address private constant DAI = ;
 
-    address private constant Flex_BNB = 0x5aFEf8567414F29f0f927A0F2787b188624c10E2;
-    address private constant CAKE_BNB = 0x0eD7e52944161450477ee417DE9Cd3a859b14fD0;
-    address private constant USDT_BNB = 0x16b9a82891338f9bA80E2D6970FddA79D1eb0daE;
-    address private constant BUSD_BNB = 0x58F876857a02D6762E0101bb5C46A8c1ED44Dc16;
-    address private constant USDT_BUSD = 0x7EFaEf62fDdCCa950418312c6C91Aef321375A00;
-    address private constant VAI_BUSD = 0x133ee93FE93320e1182923E1a640912eDE17C90C;
-    address private constant ETH_BNB = 0x74E4716E431f45807DCF19f284c7aA99F18a4fbc;
-    address private constant BTCB_BNB = 0x61EB789d75A95CAa3fF50ed7E47b96c132fEc082;
-    address private constant DOT_BNB = 0xDd5bAd8f8b360d76d12FdA230F8BAF42fe0022CF;
-    address private constant BTCB_BUSD = 0xF45cd219aEF8618A92BAa7aD848364a158a24F33;
-    address private constant DAI_BUSD = 0x66FDB2eCCfB58cF098eaa419e5EfDe841368e489;
-    address private constant USDC_BUSD = 0x2354ef4DF11afacb85a5C7f98B624072ECcddbB1;
+    address private constant Flex_BNB = ;
+    address private constant CAKE_BNB = ;
+    address private constant USDT_BNB = ;
+    address private constant BUSD_BNB = ;
+    address private constant USDT_BUSD = ;
+    address private constant VAI_BUSD = ;
+    address private constant ETH_BNB = ;
+    address private constant BTCB_BNB = ;
+    address private constant DOT_BNB = ;
+    address private constant BTCB_BUSD = ;
+    address private constant DAI_BUSD = ;
+    address private constant USDC_BUSD = ;
 
 
     /* ========== STATE VARIABLES ========== */
