@@ -53,10 +53,7 @@ contract Token is BEP20('Flex Token', 'Flex') {
      * @dev Delegate votes from `msg.sender` to `delegatee`
      * @param delegator The address to get delegatee for
      */
-    function delegates(address delegator)
-    external
-    view
-    returns (address)
+    function delegates(address delegator) external view returns (address)
     {
         return _delegates[delegator];
     }
@@ -85,8 +82,7 @@ contract Token is BEP20('Flex Token', 'Flex') {
         uint8 v,
         bytes32 r,
         bytes32 s
-    )
-    external
+    ) external
     {
         bytes32 domainSeparator = keccak256(
             abi.encode(
