@@ -25,7 +25,7 @@ contract BunnyPool is IStrategyLegacy, RewardsDistributionRecipient, ReentrancyG
     /* ========== STATE VARIABLES ========== */
 
     IBEP20 public rewardsToken; 
-    IBEP20 public constant stakingToken = IBEP20(0xC9849E6fdB743d08fAeE3E34dd2D1bc69EA11a51); 
+    IBEP20 public constant stakingToken = IBEP20(); 
     uint256 public periodFinish = 0;
     uint256 public rewardRate = 0;
     uint256 public rewardsDuration = 90 days;
